@@ -3,6 +3,8 @@ const bodyParser = require('body-parser');
 const hbs = require('hbs');
 const app = express();
 
+const port = process.env.port || 3000;
+
 app.set('view engnie', 'hbs');
 app.use(bodyParser.json());
 
@@ -27,4 +29,4 @@ app.post('/post', (req, res) => {
   });
 })
 
-app.listen(3000, () => console.log('app started on 3000'));
+app.listen(port, () => console.log('app started on port'));
