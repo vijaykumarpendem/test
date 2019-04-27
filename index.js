@@ -3,7 +3,7 @@ const bodyParser = require('body-parser');
 const hbs = require('hbs');
 const app = express();
 
-const port = process.env.port || 3000;
+const port = process.env.PORT || 3000;
 
 app.set('view engnie', 'hbs');
 app.use(bodyParser.json());
